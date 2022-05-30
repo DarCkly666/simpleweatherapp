@@ -16,13 +16,14 @@ export const SearchBar = () => {
   return (
     <form className={Styles.search_form} onSubmit={handleSubmitForm}>
       <input
+        className={Styles.search_input}
         type="search"
         placeholder="London..."
         name="search"
         value={search}
         onChange={handleSearch}
       />
-      <button>Search</button>
+      <button className={Styles.search_submit}>Search</button>
     </form>
   );
 };

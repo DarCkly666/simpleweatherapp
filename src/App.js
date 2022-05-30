@@ -1,13 +1,10 @@
-import { DailyContainer } from "./components/DailyContainer";
 import { Main } from "./components/Main";
-import Styles from "./styles/App.module.css";
 
 function App() {
   return (
-    <div className={Styles.main_container}>
+    <>
       <Main />
-      <DailyContainer />
-    </div>
+    </>
   );
 }
 

@@ -1,0 +1,44 @@
+{
+	"coord": {
+		"lon": -68.1336,
+		"lat": -16.4955
+	},
+	"weather": [
+		{
+			"id": 801,
+			"main": "Clouds",
+			"description": "few clouds",
+			"icon": "02d"
+		}
+	],
+	"base": "stations",
+	"main": {
+		"temp": 17.5,
+		"feels_like": 15.91,
+		"temp_min": 17.5,
+		"temp_max": 17.5,
+		"pressure": 1033,
+		"humidity": 23
+	},
+	"visibility": 10000,
+	"wind": {
+		"speed": 6.17,
+		"deg": 300,
+		"gust": 11.32
+	},
+	"clouds": {
+		"all": 20
+	},
+	"dt": 1653940789,
+	"sys": {
+		"type": 1,
+		"id": 8648,
+		"country": "BO",
+		"sunrise": 1653908022,
+		"sunset": 1653948409
+	},
+	"timezone": -14400,
+	"id": 3911925,
+	"name": "La Paz",
+	"cod": 200
+}

@@ -1,0 +1,13 @@
+.item_item{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.item_item:hover{
+  background-color: blueviolet;
+  color: white;
+}

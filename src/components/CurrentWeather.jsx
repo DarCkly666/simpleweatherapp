@@ -1,14 +1,8 @@
 import React from "react";
 import Styles from "../styles/CurrentWeather.module.css";
 
-export const CurrentWeather = ({ data, setUnits }) => {
-  const [unit, setUnit] = React.useState("ºK");
+export const CurrentWeather = ({ data }) => {
   const [timezone, setTimezone] = React.useState("");
-
-  const handleUnitsChange = () => {
-    setUnit(unit === "ºK" ? "ºC" : "ºK");
-    setUnits(unit === "ºK" ? "metric" : "standard");
-  };
 
   const getTimeZone = () => {
     let sec = data.timezone;
@@ -32,13 +26,11 @@ export const CurrentWeather = ({ data, setUnits }) => {
   React.useEffect(() => {
     getTimeZone();
   });
-  //console.log(data);
+
   return (
     <div className={Styles.current_container}>
       <div className={Styles.current_current}>
-        <button className={Styles.current_units} onClick={handleUnitsChange}>
-          {unit}
-        </button>
+        <h3 className={Styles.current_units}>ºC</h3>
         <img
           className={Styles.current_image}
           src={`http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`}

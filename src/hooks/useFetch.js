@@ -6,6 +6,7 @@ export const useFetch = (url, initialState) => {
   const [error, setError] = React.useState(null);
 
   React.useEffect(() => {
+    setLoading(true);
     fetch(url)
       .then((res) => res.json())
       .then((data) => setData(data))

@@ -4,5 +4,6 @@
 
 Search city and select.
 
-##Preview
+## Preview
+
 [link](https://weathersimpleapp.netlify.app/)
